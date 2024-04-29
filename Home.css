@@ -1,0 +1,61 @@
+
+  
+  .home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .home-content {
+    flex: 1;
+  }
+  
+  .file-input {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="file"] {
+    display: none;
+  }
+  
+  input[type="file"] + label {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="file"] + label::after {
+    content: 'Choose File';
+  }
+  
+  input[type="file"]:not(:focus) + label::after {
+    content: 'No file chosen';
+  }
+  
+  button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .home-img {
+    flex: 1;
+    text-align: right;
+  }
+  
